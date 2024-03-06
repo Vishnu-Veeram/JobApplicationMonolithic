@@ -1,0 +1,34 @@
+# Server configurations
+server:
+  port: 8085
+
+# Relational Database configuration
+spring:
+  h2:
+    console:
+      enabled: true
+  datasource:
+    url: jdbc:h2:mem:test
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+# Actuator configurations
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
+  info:
+    env:
+      enabled: true
+
+info:
+  app:
+    name: Job Application
+    description: Job application built by Vicky
+    version: 1.0.0

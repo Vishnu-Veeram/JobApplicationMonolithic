@@ -1,6 +1,6 @@
 # Server configurations
 server:
-  port: 8086
+  port: 8082
 
 # Relational Database configuration
 spring:
